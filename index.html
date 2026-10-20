@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <meta name="description" content="FLEXI : l'outil de gestion de projets simple pour les petites équipes.">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    
+    <!-- Css-->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!---JavaScript-->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js" defer></script>
+
+
+    <!--Une Belle Police-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+               <a class="navbar-brand" href="index.html"><span class="logo-initiale">F</span>LEXI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalites.html">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banniere -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6">
+                        <img src="images/accueil-banniere.jpg" alt="Équipe qui collabore au bureau avec FLEXI" class="img-fluid rounded">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h1>La gestion de projets qui s'adapte à vous</h1>
+                        <p class="lead">L'outil simple et clair pour les petites équipes de 3 à 20 personnes.</p>
+                        <a href="contact.html" class="btn btn-accent btn-lg">Démo gratuite</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- image du tableau de taches -->
+        <section class="container text-center">
+            <h2>Organisez vos tâches en un coup d'œil</h2>
+            <img src="images/kanban.png" alt="Tableau Kanban avec des tâches en colonnes" class="img-contenu">
+        </section>
+
+        <!-- 4 fonctionnalites en cartes -->
+        <section class="container">
+            <h2 class="text-center">Fonctionnalités clés</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card carte-tache h-100"><div class="card-body text-center">
+                        <h3 class="h6">Créer une tâche</h3>
+                        <p>Ajoutez une tâche en quelques secondes.</p>
+                    </div></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card carte-tache h-100"><div class="card-body text-center">
+                        <h3 class="h6">Tableau Kanban</h3>
+                        <p>À faire, en cours, terminé en un coup d'oeil.</p>
+                    </div></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card carte-tache h-100"><div class="card-body text-center">
+                        <h3 class="h6">Assigner &amp; commenter</h3>
+                        <p>Responsables, échéances et commentaires.</p>
+                    </div></div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card carte-tache h-100"><div class="card-body text-center">
+                        <h3 class="h6">Notifications</h3>
+                        <p>Un rappel quand une échéance approche.</p>
+                    </div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bandeau appel a l'action -->
+        <section class="cta text-center">
+            <h2>Prêt à essayer ?</h2>
+            <a href="contact.html" class="btn btn-accent btn-lg">Lancer la démo</a>
+        </section>
+    </main>
+
+    <footer class="pied-de-page">
+        <div class="container">
+            <p>FLEXI - Laboratoire 2, 420-931-MA</p>
+            <p>Images : Canva (contenu gratuit).</p>
+        </div>
+    </footer>
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

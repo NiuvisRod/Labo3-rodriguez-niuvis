@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail d'une tâche</title>
+    <meta name="description" content="Exemple de fiche de tâche FLEXI : responsable, échéance et commentaires.">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+   
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Une Belle Police-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+</head>
+<body>
+    <!-- en-tete et menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="logo-initiale">F</span>LEXI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalites.html">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container my-4">
+
+          <!-- file -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="demo.html">Démo</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Détail d'une tâche</li>
+                </ol>
+            </nav>
+
+            <h1>Préparer la réunion client</h1>
+
+            <!-- infos de la tache  -->
+            <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="images/emma.png" alt="Photo d'Emma, responsable" class="rounded-circle" width="60" height="60">
+                <div>
+                    <p class="mb-1"><strong>Responsable :</strong> Emma</p>
+                    <p class="mb-1"><strong>Échéance :</strong> 8 octobre 2026</p>
+                    <span class="badge text-bg-info">En cours</span>
+                </div>
+            </div>
+
+            <h2 class="h5 mt-4">Description</h2>
+            <p>Préparer l'ordre du jour et rassembler les documents pour la réunion avec le client.</p>
+
+            <h2 class="h5 mt-4">Commentaires</h2>
+            <div class="d-flex align-items-center gap-2">
+                <img src="images/carlos.png" alt="Photo de Carlos" class="rounded-circle" width="40" height="40">
+                <p class="mb-0">Carlos : J'ajoute les chiffres du mois.</p>
+            </div>
+
+            <a href="demo.html" class="btn btn-primary mt-4">Retour aux tâches</a>
+        </div>
+    </main>
+
+    
+    <footer class="pied-de-page">
+        <div class="container">
+            <p>FLEXI - Laboratoire 2, 420-931-MA</p>
+            <p>Images : Canva (contenu gratuit).</p>
+        </div>
+    </footer>
+
+    
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta name="description" content="Contactez l'équipe FLEXI ou demandez une démo gratuite.">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Une Belle Police-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+</head>
+
+<body>
+    <!-- en-tete et menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="logo-initiale">F</span>LEXI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalites.html">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banniere -->
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Contactez-nous</h1>
+                <p class="lead">Une question ou envie d'une démo ? Écrivez-nous.</p>
+            </div>
+        </section>
+
+        <!-- formulaire-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="bloc">
+                        <form action="merci.html" method="get">
+
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom complet</label>
+                                <input type="text" class="form-control" id="nom" name="nom" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="courriel" class="form-label">Courriel</label>
+                                <input type="email" class="form-control" id="courriel" name="courriel" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="equipe" class="form-label">Taille de l'équipe</label>
+                                <input type="number" class="form-control" id="equipe" name="equipe" min="1" max="500">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sujet" class="form-label">Sujet</label>
+                                <select class="form-select" id="sujet" name="sujet" required>
+                                    <option value="">Choisir...</option>
+                                    <option>Démo gratuite</option>
+                                    <option>Forfait Basic</option>
+                                    <option>Forfait Pro</option>
+                                    <option>Forfait Entreprise</option>
+                                    <option>Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" minlength="10"
+                                    required></textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="consentement" name="consentement"
+                                    required>
+                                <label class="form-check-label" for="consentement">J'accepte d'être contacté par
+                                    FLEXI.</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="pied-de-page">
+        <div class="container">
+            <p>FLEXI - Laboratoire 2, 420-931-MA</p>
+            <p>Images : Canva (contenu gratuit).</p>
+        </div>
+    </footer>
+
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

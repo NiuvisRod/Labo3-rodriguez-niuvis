@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <meta name="description" content="Questions fréquentes sur FLEXI et ses forfaits.">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+
+    <!-- Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Une Belle Police-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
+</head>
+
+<body>
+    <!-- en-tete et menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="logo-initiale">F</span>LEXI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalites.html">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banniere -->
+        <section class="hero">
+            <div class="container text-center">
+                <h1>Foire aux questions</h1>
+                <p class="lead">Questions les plus fréquentes sur FLEXI.</p>
+            </div>
+        </section>
+
+        <!-- Faq -->
+        <div class="container">
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                            FLEXI est-il adapté aux petites équipes ?
+                        </button>
+                    </h2>
+                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Oui, FLEXI est pensé pour les équipes de 3 à 20 personnes.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q2">
+                            Puis-je essayer gratuitement ?
+                        </button>
+                    </h2>
+                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Oui, une démo gratuite est disponible depuis la page Contact.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q3">
+                            Combien coûte FLEXI ?
+                        </button>
+                    </h2>
+                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Les forfaits commencent à 29 $/mois. Voir la page Tarifs pour le
+                            détail.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q4">
+                            Mes données sont-elles en sécurité ?
+                        </button>
+                    </h2>
+                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Le forfait Entreprise offre une sécurité et un contrôle avancés.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#q5">
+                            Faut-il installer un logiciel ?
+                        </button>
+                    </h2>
+                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Non, FLEXI fonctionne directement dans votre navigateur.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+            <section class="cta text-center">
+                <h2>Une autre question ?</h2>
+                <a href="contact.html" class="btn btn-accent btn-lg">Contactez-nous</a>
+            </section>
+    </main>
+
+
+    <footer class="pied-de-page">
+        <div class="container">
+            <p>FLEXI - Laboratoire 2, 420-931-MA</p>
+            <p>Images : Canva (contenu gratuit).</p>
+        </div>
+    </footer>
+
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARIFS</title>
+    <meta name="description" content="Confirmation : Votre message a bien été envoyé.">
+
+    <!--Boostrap-->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Une Belle Police-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="logo-initiale">F</span>LEXI</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fonctionnalites.html">Fonctionnalités</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="container my-4">
+            <h1>Nos tarifs</h1>
+
+            <img src="images/bureau.png" alt="Ordinateur portable sur un bureau" class="img-fluid mb-4">
+
+            <p>Choisissez le forfait qui convient à votre équipe.</p>
+
+            <!-- Les 3 forfaits -->
+            <div class="grille-forfaits">
+
+                <div class="card carte-tache">
+                    <div class="card-body">
+                        <h2 class="h4">Basic</h2>
+                        <p class="h3">29 $/mois</p>
+                        <ul class="liste-avantages">
+                            <li>1 projet</li>
+                            <li>Kanban basique</li>
+                            <li>Assignations + échéances</li>
+                            <li>Commentaires</li>
+                            <li>Support courriel</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Essayer</a>
+                    </div>
+                </div>
+
+                <div class="card carte-tache">
+                    <div class="card-body">
+                        <h2 class="h4">Pro</h2>
+                        <p class="h3">79 $/mois</p>
+                        <ul class="liste-avantages">
+                            <li>Projets illimités</li>
+                            <li>Utilisateurs illimités</li>
+                            <li>Kanban avancé</li>
+                            <li>Support 24/7</li>
+                            <li>Rapports et automatisations</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Essayer</a>
+                    </div>
+                </div>
+
+                <div class="card carte-tache">
+                    <div class="card-body">
+                        <h2 class="h4">Entreprise</h2>
+                        <p class="h3">Sur demande</p>
+                        <ul class="liste-avantages">
+                            <li>Utilisateurs illimités</li>
+                            <li>Support prioritaire</li>
+                            <li>SLA garanti</li>
+                            <li>Accompagnement dédié</li>
+                            <li>Sécurité avancée</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tableau comparatif-->
+            <h2 class="mt-5">Comparatif des forfaits</h2>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Fonctionnalité</th>
+                        <th scope="col">Basic</th>
+                        <th scope="col">Pro</th>
+                        <th scope="col">Entreprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Projets</th>
+                        <td>1</td>
+                        <td>Illimités</td>
+                        <td>Illimités</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Utilisateurs</th>
+                        <td>5</td>
+                        <td>Illimités</td>
+                        <td>Illimités</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kanban avancé</th>
+                        <td>Non</td>
+                        <td>Oui</td>
+                        <td>Oui</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Support</th>
+                        <td>Courriel</td>
+                        <td>24/7</td>
+                        <td>Prioritaire</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rapports</th>
+                        <td>Non</td>
+                        <td>Oui</td>
+                        <td>Oui</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="pied-de-page">
+        <div class="container">
+            <p>FLEXI - Laboratoire 2, 420-931-MA</p>
+        <p>Images : Canva (usage gratuit autorisé).</p>
+        </div>
+    </footer>
+
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
