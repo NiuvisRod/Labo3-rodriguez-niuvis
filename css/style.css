@@ -159,9 +159,43 @@ html[data-theme="sombre"] {
     --texte: #f2eaee;
     --texte-doux: #b8aab0;
     --fond: #1b1418;
-    --fond: #261c21;
+    --fond-doux: #261c21;
 }
 
+
+html[data-theme="sombre"] .card {
+    background-color: var(--fond-doux);
+    color: var(--texte);
+    border-color: #3a2e34;
+   }
+
+html[data-theme="sombre"] h1,
+html[data-theme="sombre"] h2,
+html[data-theme="sombre"] h3 {
+    color: #e3b5c4;
+}
+html[data-theme="sombre"] .table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--texte);
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.06);
+    --bs-table-striped-color: var(--texte);
+    --bs-table-hover-bg: rgba(255, 255, 255, 0.1);
+    --bs-table-hover-color: var(--texte);
+    border-color: #3a2e34;
+}
+
+html[data-theme="sombre"] .accordion {
+    --bs-accordion-bg: var(--fond-doux);
+    --bs-accordion-color: var(--texte);
+    --bs-accordion-border-color: #3a2e34;
+    --bs-accordion-btn-color: var(--texte);
+    --bs-accordion-btn-bg: var(--fond-doux);
+    --bs-accordion-active-color: var(--texte);
+    --bs-accordion-active-bg: #33262d;
+}
+html[data-theme="sombre"] .accordion-button::after {
+    filter: invert(1);
+}
 /*bordure de .bloc*/
 
 html[data-theme="sombre"] .bloc {

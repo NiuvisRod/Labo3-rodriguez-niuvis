@@ -1,0 +1,6 @@
+Déclaration d'utilisation  de l'AI
+
+J'ai utilisé l’assistant IA pour m'aider à comprendre le code, 
+corriger mes erreurs et adapter des exemples de code que j'ai ensuite intégrés à mon projet (theme.js, script.js, CSS). 
+Je suis en mesure d'expliquer mon code.
+

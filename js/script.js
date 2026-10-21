@@ -82,8 +82,8 @@ function valideEquipe(champ) {
    if (valeur === "")
     return "";
    const nombre = Number(valeur);
-   if(!Number.isInteger(nombre) || nombre < 1 || nombre >500) {
-    return"La taille de l'équipe doit être un nombre entier entre 1 et 500";
+   if(!Number.isInteger(nombre) || nombre < 3 || nombre >50) {
+    return"La taille de l'équipe doit être un nombre entier entre 3 et 50";
    }
     return "";
 }
@@ -94,14 +94,14 @@ function validerSujet(champ) {
 
 function validerMessage(champ) {
    const valeur = champ.value.trim();
-    if (valeur === "") return "Ecrivez votre message.";
+    if (valeur === "") return "Écrivez votre message.";
     if (valeur.length < 10) {
         return "Le message doit contenir au moins 10 caractere";
     }
     return "";
 }
 function validerConsentement(champ) {
-    if (!champ.checked) return "Vous devez accepter d'etre contacte pour envoye le formulaire";
+    if (!champ.checked) return "Vous devez accepter d'être contacté pour envoyer le formulaire";
     return "";
 }
 
