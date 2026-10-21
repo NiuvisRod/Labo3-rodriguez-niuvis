@@ -153,4 +153,17 @@ main h2 { margin-top: 1.5rem; margin-bottom: 1rem; }
 }
 
 
+/* [T1] Theme Sombre */
 
+html[data-theme="sombre"] {
+    --texte: #f2eaee;
+    --texte-doux: #b8aab0;
+    --fond: #1b1418;
+    --fond: #261c21;
+}
+
+/*bordure de .bloc*/
+
+html[data-theme="sombre"] .bloc {
+    border-color: #3e2e34;
+}

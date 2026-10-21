@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="icon" href="data:,">
     <meta name="description" content="Contactez l'équipe FLEXI ou demandez une démo gratuite.">
 
     <!-- bootstrap -->
@@ -12,6 +13,10 @@
 
     <!--Css-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!---JavaScript-->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js" defer></script>
 
     <!--Une Belle Police-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
@@ -34,8 +39,10 @@
                         <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
                         <li class="nav-item"><a class="nav-link" href="demo.html">Démo</a></li>
                         <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+                        <li class="nav-item">
+                            <button type="button" id="btn-theme" class="btn btn-outline-light ms-lg-2">Activer le mode sombre</button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,26 +63,29 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
                     <div class="bloc">
-                        <form action="merci.html" method="get">
+                        <form action="merci.html" method="get" novalidate>
 
                             <div class="mb-3">
                                 <label for="nom" class="form-label">Nom complet</label>
-                                <input type="text" class="form-control" id="nom" name="nom" required>
+                                <input type="text" class="form-control" id="nom" name="nom" required aria-describedby="erreur-nom">
+                                <div class="invalid-feedback" id="erreur-nom"></div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="courriel" class="form-label">Courriel</label>
-                                <input type="email" class="form-control" id="courriel" name="courriel" required>
+                                <input type="email" class="form-control" id="courriel" name="courriel" required aria-describedby="erreur-courriel">
+                                <div class="invalid-feedback" id="erreur-courriel"></div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="equipe" class="form-label">Taille de l'équipe</label>
-                                <input type="number" class="form-control" id="equipe" name="equipe" min="1" max="500">
+                                <input type="number" class="form-control" id="equipe" name="equipe" min="1" max="500" aria-describedby="erreur-equipe">
+                                <div class="invalid-feedback" id="erreur-equipe"></div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="sujet" class="form-label">Sujet</label>
-                                <select class="form-select" id="sujet" name="sujet" required>
+                                <select class="form-select" id="sujet" name="sujet" required aria-describedby="erreur-sujet">
                                     <option value="">Choisir...</option>
                                     <option>Démo gratuite</option>
                                     <option>Forfait Basic</option>
@@ -83,19 +93,20 @@
                                     <option>Forfait Entreprise</option>
                                     <option>Autre</option>
                                 </select>
+                                <div class="invalid-feedback" id="erreur-sujet"></div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" minlength="10"
-                                    required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="4" minlength="10" required aria-describedby="erreur-message"></textarea>
+                                <div class="invalid-feedback" id="erreur-message"></div>
                             </div>
 
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="consentement" name="consentement"
-                                    required>
-                                <label class="form-check-label" for="consentement">J'accepte d'être contacté par
-                                    FLEXI.</label>
+                                <input type="checkbox" class="form-check-input" id="consentement" name="consentement" required aria-describedby="erreur-consentement">
+                                   
+                                <label class="form-check-label" for="consentement">J'accepte d'être contacté par FLEXI.</label>
+                                <div class="invalid-feedback" id="erreur-consentement"></div>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Envoyer</button>
@@ -105,6 +116,13 @@
                 </div>
             </div>
         </div>
+        <section class="container my-4" aria-labellebdy="titre-demandes">
+            <div class="bloc">
+                <h2 class="h4" id="titre-demandes">Mes demandes</h2>
+                <div id="liste-demandes"></div>
+                <button type="button" id="btn-effacer" class="btn btn-outline-danger mt-3">Tout effacer</button>
+            </div>
+        </section>
     </main>
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé</title>
+    <link rel="icon" href="data:,">
     <meta name="description" content="Confirmation : votre message a bien été envoyé à l'équipe FLEXI.">
 
     <!-- Bootstrap -->
@@ -11,6 +12,10 @@
     
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!---JavaScript-->
+    <script src="js/theme.js"></script>
+    <script src="js/script.js" defer></script>
 
     <!--Une Belle Police-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
@@ -47,6 +52,11 @@
                 <h1>Merci !</h1>
                 <p class="lead">Votre message a bien été envoyé.</p>
                 <p>Nous vous répondrons sous 24 heures.</p>
+                
+                <div id="recapitulatif" class="text-start mt-4" hidden>
+                    <h2 class="h5">Récapitulatif de votre demande</h2>     
+                    <d1 id="recap-liste"></d1>    
+                </div>
                 <a href="index.html" class="btn btn-accent btn-lg mt-3">Retour à l'accueil</a>
             </div>
         </section>
